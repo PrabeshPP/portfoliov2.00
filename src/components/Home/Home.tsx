@@ -14,13 +14,13 @@ export const Home = () => {
                     <BsTwitter className="cursor-pointer transition-all hover:text-[royalblue] hover:scale-[1.5] " />
                 </div>
                 <div className="h-[6vh] w-[3%]  mt-5 border-2 rounded-full flex items-center justify-center ">
-                    <div className="h-2 w-2 bg-white  rounded-full animate-bounce">
+                    <div className="h-2 w-2 bg-white  rounded-full animate-boucning-circle">
                     </div>
                 </div>
             </div>
 
-            <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1440 320" className="h-[25vh] w-[100%]">
-                <path fill="crimson" fill-opacity="1" d="M0,96L34.3,85.3C68.6,75,137,53,206,80C274.3,107,343,181,411,192C480,203,549,149,617,144C685.7,139,754,181,823,208C891.4,235,960,245,1029,213.3C1097.1,181,1166,107,1234,74.7C1302.9,43,1371,53,1406,58.7L1440,64L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path>
+            <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1440 320" className="h-[35vh] w-[100%]">
+            <path fill="#fff" fillOpacity="1" d="M0,192L60,176C120,160,240,128,360,138.7C480,149,600,203,720,234.7C840,267,960,277,1080,261.3C1200,245,1320,203,1380,181.3L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
             </svg>
 
 

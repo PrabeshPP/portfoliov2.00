@@ -1,3 +1,4 @@
+import About from "./components/About/About";
 import Header from "./components/Header/Header";
 import { Home } from "./components/Home/Home";
 
@@ -7,6 +8,7 @@ function App() {
     <div className="h-max w-[100%] bg-white p-0 m-0">
       <Header/>
       <Home/>
+      <About/>
     </div>
   );
 }
