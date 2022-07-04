@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useState } from 'react'
 import profilePic from "../../Assets/profile.jpg";
 import {db} from "../../configuration/firebaseConfig";
-import { collection,getDoc,getDocs } from 'firebase/firestore';
+import { collection,getDocs } from 'firebase/firestore';
 import { Description } from '../../model/description';
 import { Framework, Skill } from '../../model/skills.';
 
@@ -46,7 +46,7 @@ const About = () => {
       fetch();
       fetchSkills();
 
-  },[])
+  },[fetchSkills])
 
   return (
     <div className='min-h-[80vh] w-[100%] flex flex-col items-center ' >
@@ -64,7 +64,7 @@ const About = () => {
           */}
           <div className='h-[60vh] w-[60%] text-center flex flex-col justify-center items-center' >
               {
-                intro.length==0? <div className='h-16 w-16 animate-spin bg-transparent rounded-full border-t-2 border-r-2 border-[crimson]'>
+                intro.length===0? <div className='h-16 w-16 animate-spin bg-transparent rounded-full border-t-2 border-r-2 border-[crimson]'>
                 
                 </div>  :intro.map(desc=>{
                   return <div className='h-[80%] w-[100%] flex flex-col justify-center items-center' key={desc.id}>
