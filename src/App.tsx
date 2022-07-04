@@ -1,12 +1,16 @@
 import Header from "./components/Header/Header";
+import { Home } from "./components/Home/Home";
 
 
 function App() {
   return (
-    <div className="h-[100vh] w-[100vw]">
+    <div className="h-max w-[100%] bg-white p-0 m-0">
       <Header/>
+      <Home/>
     </div>
   );
 }
 
 export default App;
+
+// dark:bg-[#141414]

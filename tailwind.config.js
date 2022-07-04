@@ -8,7 +8,7 @@ module.exports = {
       },
       boxShadow:{
         'header-shadow':"0px 1px 3px #2726269d"
-      }
+      },
     },
   },
   plugins: [],
