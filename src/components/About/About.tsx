@@ -1,16 +1,22 @@
-import React, { useEffect, useState } from 'react'
+import React, { useCallback, useEffect, useState } from 'react'
 import profilePic from "../../Assets/profile.jpg";
 import {db} from "../../configuration/firebaseConfig";
-import { collection,getDocs } from 'firebase/firestore';
+import { collection,getDoc,getDocs } from 'firebase/firestore';
 import { Description } from '../../model/description';
+import { Framework, Skill } from '../../model/skills.';
 
 
 const About = () => {
   const [intro,setIntro]=useState<Description[]>([]);
+  const [skills,setSkills]=useState<Skill[]>([]);
+  const [frameworks,setFrameworks]=useState<Framework[]>([]);
 
+
+  //fetching introduction
   const fetch:()=>Promise<void>=async()=>{
     const introCollection=collection(db,"introduction");
     const introSnapShot=await getDocs(introCollection);
+
     const desc=introSnapShot.docs.map((doc)=>(
       {
         id:doc.id,
@@ -23,16 +29,34 @@ const About = () => {
   
   }
 
+  //fetching skills from firebase
+
+  const fetchSkills=useCallback(async()=>{
+    const skillsCollection=collection(db,"skills");
+    const skillsSnapShot=await getDocs(skillsCollection);
+    const skillsFirebase=skillsSnapShot.docs[0].data().Skills;
+    const frameworksFirebase=skillsSnapShot.docs[0].data().Frameworks;
+
+    setSkills(skillsFirebase);
+    setFrameworks(frameworksFirebase);
+
+  },[])
+
   useEffect(()=>{
-      fetch()
+      fetch();
+      fetchSkills();
 
   },[])
 
   return (
     <div className='min-h-[80vh] w-[100%] flex flex-col items-center ' >
-          <h1 className='text-5xl font-bold'>About</h1>
+          <h1 className='text-5xl font-bold'>
+            <span className='text-[crimson]'>Ab</span>
+            <span className='text-[blue]'>out</span>
+            
+            </h1>
           <div className='h-[90%] w-[90%] flex items-center justify-around mt-10' >
-          <img src={profilePic} alt="Profile Pic" className='h-[60vh] w-[35%] object-fill rounded-lg shadow-2xl shadow-[#000000]'/>
+          <img src={profilePic} alt="Profile Pic" className='h-[50vh] w-[30%] object-fill rounded-lg shadow-2xl shadow-[#000000]'/>
 
           {/* 
             description for the about section 
@@ -51,7 +75,9 @@ const About = () => {
                 })
               }
           </div>
-              {
+
+          </div>
+          {
                 /* 
                 
                 Skills Section to showcase my skills.
@@ -62,11 +88,11 @@ const About = () => {
               }
 
 
-              <div>
-                  
+              <div className='h-[70vh] w-[90%]  mt-12 mb-5 flex flex-col items-center'>
+                      <div className='h-[50vh] w-[60%] bg-red-500'>
+                            
+                      </div>
               </div>
-
-          </div>
     </div>
   )
 }
