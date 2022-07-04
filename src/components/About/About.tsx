@@ -87,8 +87,8 @@ const About = () => {
               }
 
 
-              <div className='min-h-[70vh] w-[90%]  mt-12 mb-5 flex flex-col items-center'>
-                  <h1 className='text-xl font-bold text-green-500'>Programming Languages I Use 🤖</h1>
+              <div className='min-h-[70vh] w-[90%]  mt-32 mb-5 flex flex-col items-center'>
+                  <h1 className='text-xl font-bold text-green-500 font-neucha'>Programming Languages I Use 🤖</h1>
                   <div className='h-[70vh] w-[60%] flex items-center justify-around flex-wrap'>
                     {
                       skills.map((skill)=>{
@@ -99,7 +99,7 @@ const About = () => {
                       })
                     }
                   </div>
-                  <h1 className='text-xl font-bold text-green-500 mt-12'>Frameworks & Tools 👾</h1>
+                  <h1 className='text-xl font-bold text-green-500 mt-12 font-neucha'>Frameworks & Tools 👾</h1>
                   <div className='h-[70vh] w-[60%] flex items-center justify-around flex-wrap'>
                     {
                       frameworks.map((framework)=>{

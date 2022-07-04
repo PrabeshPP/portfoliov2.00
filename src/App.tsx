@@ -1,14 +1,16 @@
 import About from "./components/About/About";
 import Header from "./components/Header/Header";
 import { Home } from "./components/Home/Home";
-
+import Projects from "./components/Projects/Projects";
+import "./app.css";
 
 function App() {
   return (
-    <div className="h-max w-[100%] bg-white p-0 m-0">
+    <div className="app">
       <Header/>
       <Home/>
       <About/>
+      <Projects/>
     </div>
   );
 }
