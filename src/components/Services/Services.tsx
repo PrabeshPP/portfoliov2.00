@@ -15,7 +15,6 @@ const Services = () => {
             return service1.id-service2.id;
         });
 
-        console.log(servicesDataSorted);
         setServices(servicesDataSorted);
     },[])
 
@@ -31,7 +30,9 @@ const Services = () => {
         <h1 className='text-4xl font-bold text-white'>Services</h1>
         <div className='min-h-[80vh] w-[95%] mt-10 flex flex-wrap items-center justify-center'>
             {
-                services.map((service)=>{
+                services.length==0?<div className='h-16 w-16 animate-spin bg-transparent rounded-full border-t-2 border-r-2 border-white'>
+
+                </div>:services.map((service)=>{
                   return <div className='min-h-[50vh] w-[33%] flex flex-col items-center transition-colors bg-white m-5 rounded-xl shadow-xl shadow-[#241f1f7b] cursor-pointer hover:shadow-2xl hover:shadow-[#000000b5] hover:bg-[crimson] hover:text-white' key={service.id}>
                       <img src={service.iconURL} alt={service.service} className="h-[60px] w-[60px] mt-5 "/>
                       <h1 className='text-xl font-bold mt-5'>{service.service}</h1>

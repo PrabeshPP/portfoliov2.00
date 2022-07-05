@@ -91,6 +91,10 @@ const About = () => {
                   <h1 className='text-xl font-bold text-green-500 font-neucha'>Programming Languages I Use 🤖</h1>
                   <div className='h-[70vh] w-[60%] flex items-center justify-around flex-wrap'>
                     {
+                      skills.length==0?<div className='h-16 w-16 animate-spin bg-transparent rounded-full border-t-2 border-r-2 border-black'>
+
+                      </div>:
+
                       skills.map((skill)=>{
                         return <div key={skill.skill} className="h-[25%] w-[25%] bg-white shadow-md shadow-[#1c19195d] m-5 flex items-center justify-around hover:shadow-lg hover:shadow-[#00000075] hover:cursor-pointer">
                           <img src={skill.iconURL} alt={skill.skill} className="h-[80%] w-[80%] object-contain"/>
@@ -102,7 +106,8 @@ const About = () => {
                   <h1 className='text-xl font-bold text-green-500 mt-12 font-neucha'>Frameworks & Tools 👾</h1>
                   <div className='h-[70vh] w-[60%] flex items-center justify-around flex-wrap'>
                     {
-                      frameworks.map((framework)=>{
+                      frameworks.length==0?<div className='h-16 w-16 animate-spin bg-transparent rounded-full border-t-2 border-r-2 border-black'>
+                      </div>:frameworks.map((framework)=>{
                         return <div key={framework.framework} className="h-[25%] w-[25%] bg-white shadow-md shadow-[#1c19196e] m-5 flex items-center justify-around hover:shadow-lg hover:shadow-[#00000075] hover:cursor-pointer">
                           <img src={framework.iconURL} alt={framework.framework} className="h-[80%] w-[90%] object-contain"/>
                           </div>

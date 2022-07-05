@@ -12,3 +12,14 @@ export interface Service{
     iconURL:string,
     description:string
 }
+
+
+//model for the Projects fetched from the firebase
+
+export interface Project{
+    id:number,
+    name:string,
+    projectLink:string,
+    projectURL:string,
+    techStack:string
+}
