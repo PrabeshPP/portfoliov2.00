@@ -23,3 +23,13 @@ export interface Project{
     projectURL:string,
     techStack:string
 }
+
+
+//model for the Contacts section to send the query to the firebase
+
+export interface Contact{
+    fullName:string,
+    email:string,
+    subject:string,
+    message:string
+}
