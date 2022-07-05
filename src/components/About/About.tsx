@@ -68,12 +68,15 @@ const About = () => {
                 
                 </div>  :intro.map(desc=>{
                   return <div className='h-[80%] w-[100%] flex flex-col justify-center items-center' key={desc.id}>
-                     <h1 className='text-3xl font-bold text-green-500'>{desc.header}</h1>
+                     <h1 className='text-3xl font-bold text-black'>{desc.header}</h1>
                       <p className='text-md font-semibold mt-5'>{desc.paragraph}</p>
                   </div>
                 })
               }
-              <button className='bg-[crimson] h-[12%] w-[20%] mb-2 rounded-full text-white font-bold shadow-lg shadow-black transition-all hover:bg-green-500'>My CV</button>
+              <div className='h-[20%] w-[70%] flex justify-around '>
+              <a href='https://github.com/PrabeshPP' target="_blank" className='h-[70%] w-[40%] bg-[crimson] mb-2 rounded-full text-white font-bold shadow-lg shadow-black  transition-colors hover:bg-green-500'><button className=' h-[100%] w-[100%]  '>GitHub</button></a>
+              <button className='bg-[crimson] h-[70%] w-[40%] mb-2 rounded-full text-white font-bold shadow-lg shadow-black  transition-colors hover:bg-green-500'>My CV</button>
+              </div>
           </div>
 
           </div>
@@ -88,7 +91,7 @@ const About = () => {
 
 
               <div className='min-h-[70vh] w-[90%]  mt-32 mb-5 flex flex-col items-center'>
-                  <h1 className='text-xl font-bold text-green-500 font-neucha'>Programming Languages I Use 🤖</h1>
+                  <h1 className='text-xl font-bold text-black font-neucha'>Programming Languages I Use 🤖</h1>
                   <div className='h-[70vh] w-[60%] flex items-center justify-around flex-wrap'>
                     {
                       skills.length==0?<div className='h-16 w-16 animate-spin bg-transparent rounded-full border-t-2 border-r-2 border-black'>
@@ -103,7 +106,7 @@ const About = () => {
                       })
                     }
                   </div>
-                  <h1 className='text-xl font-bold text-green-500 mt-12 font-neucha'>Frameworks & Tools 👾</h1>
+                  <h1 className='text-xl font-bold text-black mt-12 font-neucha'>Frameworks & Tools 👾</h1>
                   <div className='h-[70vh] w-[60%] flex items-center justify-around flex-wrap'>
                     {
                       frameworks.length==0?<div className='h-16 w-16 animate-spin bg-transparent rounded-full border-t-2 border-r-2 border-black'>

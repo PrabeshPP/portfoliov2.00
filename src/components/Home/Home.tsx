@@ -3,15 +3,15 @@ import { BsLinkedin, BsGithub, BsTwitter } from "react-icons/bs";
 
 export const Home = () => {
     return (
-        <div className="min-h-[90vh] w-[100%]  flex  flex-col p-0 m-0 bg-green-500 justify-between items-center">
+        <div className="min-h-[90vh] w-[100%]  flex  flex-col p-0 m-0 bg-[royalblue] justify-between items-center">
             <div className="min-h-[20%] w-[60%] text-center flex items-center justify-center flex-col  mt-32" >
                 <span className="text-5xl text-white font-bold font-sans">
                     Mobile Developer,Web Developer, Blockchain Enthusiast.
                 </span>
                 <div className="flex w-[25%] h-[5vh]  justify-around items-center text-2xl text-white mt-10 ">
-                    <BsLinkedin className="cursor-pointer transition-all hover:text-[royalblue] hover:scale-[1.5] " />
-                    <BsGithub className="cursor-pointer transition-all hover:text-[royalblue] hover:scale-[1.5] " />
-                    <BsTwitter className="cursor-pointer transition-all hover:text-[royalblue] hover:scale-[1.5] " />
+                <a href="https://www.linkedin.com/in/prabeshbista/" target="_blank"><BsLinkedin className="cursor-pointer text-white transition-all  hover:text-white hover:scale-[1.5] " /></a>
+          <a href="https://github.com/PrabeshPP" target="_blank"><BsGithub className="cursor-pointer transition-all text-white hover:text-white hover:scale-[1.5] " /></a>
+        <a href="https://twitter.com/Prabeshbista9" target="_blank"><BsTwitter className="cursor-pointer transition-all text-white hover:text-white hover:scale-[1.5] " /></a>
                 </div>
                 <div className="h-[6vh] w-[3%]  mt-5 border-2 rounded-full flex items-center justify-center ">
                     <div className="h-2 w-2 bg-white  rounded-full animate-boucning-circle">

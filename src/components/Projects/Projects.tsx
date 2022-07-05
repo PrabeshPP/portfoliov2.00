@@ -30,7 +30,7 @@ const Projects = () => {
             </div>:
 
             projects.map((project)=>{
-              return <a className='h-[60vh] w-[30%] bg-white m-5 rounded-2xl shadow-md shadow-[#241f1f7b] ' href={project.projectLink} key={project.id} target="_blank">
+              return <a className='h-[60vh] w-[30%] bg-white m-5 rounded-2xl shadow-md shadow-[#241f1f7b] hover:shadow-xl hover:shadow-[#241f1f7b]' href={project.projectLink} key={project.id} target="_blank">
                 <div className='h-[100%] w-[100%] flex flex-col items-center '   >
                     <img src={project.projectURL} alt={project.name} className='h-[60%] w-[100%] object-cover rounded-t-2xl'/>
                     <h1 className='text-xl font-neucha font-extrabold mt-4'>{project.name}</h1>
