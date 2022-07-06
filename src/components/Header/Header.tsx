@@ -10,12 +10,12 @@ const Header:React.FC = () => {
         </div>
         <div className='h-[100%] w-[70%] flex items-center'>
             <ul className='h-[100%] w-[75%] flex justify-around items-center font-bold uppercase '>
-                <li className='cursor-pointer hover:text-green-500 '>Home</li>
-                <li className='cursor-pointer hover:text-green-500 '>About</li>
-                <li className='cursor-pointer hover:text-green-500 '>Projects</li>
-                <li className='cursor-pointer hover:text-green-500 '>Services</li>
+                <a href='#home'><li className='cursor-pointer hover:text-green-500 '>Home</li></a>
+               <a href='#about'> <li className='cursor-pointer hover:text-green-500 '>About</li></a>
+                <a href='#projects'><li className='cursor-pointer hover:text-green-500 '>Projects</li></a>
+                <a href='#services'><li className='cursor-pointer hover:text-green-500 '>Services</li></a>
             </ul>
-            <button className='h-[70%] w-[20%] bg-red-600 outline-none rounded-full hover:bg-green-500 text-lg font-bold text-white shadow-md shadow-[#00000097]'>Contact me</button>
+            <a href='#contacts' className='h-[70%] w-[20%]'><button className='h-[100%] w-[100%] bg-red-600 outline-none rounded-full hover:bg-green-500 text-lg font-bold text-white shadow-md shadow-[#00000097]'>Contact me</button></a>
         </div>
         
     </div>

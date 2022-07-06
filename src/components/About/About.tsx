@@ -49,7 +49,7 @@ const About = () => {
   },[fetchSkills])
 
   return (
-    <div className='min-h-[80vh] w-[100%] flex flex-col items-center ' >
+    <div id='about' className='min-h-[80vh] w-[100%] flex flex-col items-center ' >
 
           {/* <h1 className='text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-300 to-[crimson] border-b-4 border-black'>About</h1> */}
 
