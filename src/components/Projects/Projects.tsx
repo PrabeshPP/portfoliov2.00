@@ -21,7 +21,7 @@ const Projects = () => {
 
 
   return (
-    <div id='projects' className='min-h-[40vh] w-[100%] flex flex-col items-center'>
+    <section id='projects' className='min-h-[40vh] w-[100%] flex flex-col items-center'>
       <h1 className='text-3xl font-bold mt-20'>Some of my Works</h1>
       <div className='min-h-[20vh] w-[95%] flex flex-wrap items-center  mt-10 mb-5'>
           {
@@ -40,7 +40,7 @@ const Projects = () => {
             })
           }
       </div>
-    </div>
+    </section>
   )
 }
 

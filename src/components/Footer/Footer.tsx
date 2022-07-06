@@ -5,7 +5,7 @@ const Footer = () => {
     const date:Date=new Date;
     let dateYear=date.getFullYear()
   return (
-    <div className="h-[20vh] w-[100%] bg-[royalblue] flex items-center justify-around">
+    <section className="h-[20vh] w-[100%] bg-[royalblue] flex items-center justify-around">
     <div className="h-[80%] w-[20%] flex flex-col ml-5">
       <h1 className="text-2xl font-extrabold font-neucha pt-5 text-white">
         Prabesh
@@ -27,7 +27,7 @@ const Footer = () => {
         Made with ❤️ by Prabesh Bista.
       </h1>
     </div>
-  </div>
+  </section>
   )
 }
 

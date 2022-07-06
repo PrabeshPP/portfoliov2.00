@@ -3,7 +3,7 @@ import { BsLinkedin, BsGithub, BsTwitter } from "react-icons/bs";
 
 export const Home = () => {
     return (
-        <div id="home" className="min-h-[90vh] w-[100%]  flex  flex-col p-0 m-0 bg-[royalblue] justify-between items-center">
+        <section id="home" className="min-h-[90vh] w-[100%]  flex  flex-col p-0 m-0 bg-[royalblue] justify-between items-center">
             <div className="min-h-[20%] w-[60%] text-center flex items-center justify-center flex-col  mt-32" >
                 <span className="text-5xl text-white font-bold font-sans">
                     Mobile Developer,Web Developer, Blockchain Enthusiast.
@@ -24,6 +24,6 @@ export const Home = () => {
             </svg>
 
 
-        </div>
+        </section>
     );
 };

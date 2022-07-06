@@ -49,7 +49,7 @@ const About = () => {
   },[fetchSkills])
 
   return (
-    <div id='about' className='min-h-[80vh] w-[100%] flex flex-col items-center ' >
+    <section id='about' className='min-h-[80vh] w-[100%] flex flex-col items-center ' >
 
           {/* <h1 className='text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-300 to-[crimson] border-b-4 border-black'>About</h1> */}
 
@@ -75,9 +75,10 @@ const About = () => {
               }
               <div className='h-[20%] w-[70%] flex justify-around '>
               <a href='https://github.com/PrabeshPP' target="_blank" className='h-[70%] w-[40%] bg-[crimson] mb-2 rounded-full text-white font-bold shadow-lg shadow-black  transition-colors hover:bg-green-500'><button className=' h-[100%] w-[100%]  '>GitHub</button></a>
-              <button className='bg-[crimson] h-[70%] w-[40%] mb-2 rounded-full text-white font-bold shadow-lg shadow-black  transition-colors hover:bg-green-500'>My CV</button>
+              <a href='https://drive.google.com/file/d/1d_Nwg_XzeZN2sIibLOWSCX1qP754S2vU/view?usp=sharing' className='h-[70%] w-[40%] mb-2 rounded-full bg-[crimson] text-white font-bold shadow-lg shadow-black  transition-colors hover:bg-green-500' target="_blank"><button className=' h-[100%] w-[100%] '>My CV</button></a>
               </div>
           </div>
+
 
           </div>
           {
@@ -118,7 +119,7 @@ const About = () => {
                     }
                   </div>
               </div>
-    </div>
+    </section>
   )
 }
 
