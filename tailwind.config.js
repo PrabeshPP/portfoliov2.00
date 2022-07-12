@@ -3,6 +3,8 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      
+
       animation:{
         'boucning-circle':'circle 1s linear reverse infinite'
       },
@@ -22,6 +24,8 @@ module.exports = {
           }
         }
       },
+
+    
 
       fontFamily:{
         'neucha':['Neucha','cursive']
