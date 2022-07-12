@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from 'react'
+import  { useCallback, useEffect, useState } from 'react'
 import {collection,getDocs} from "firebase/firestore";
 import { db } from '../../configuration/firebaseConfig';
 import { Project } from '../../model/description';
