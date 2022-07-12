@@ -2,13 +2,18 @@ import React from 'react'
 
 const Header:React.FC = () => {
   return (
-    <section className='h-[10vh] w-[100%] bg-white flex justify-between shadow-header-shadow sticky top-0 z-10 '>
+    <section className='sm:h-[10vh] sm:w-[100%] sm:bg-white sm:flex sm:justify-between sm:shadow-header-shadow sm:sticky sm:top-0 sm:z-10  '>
         <div className='h-[100%] w-[20%] flex items-center justify-start select-none box-border'>
             <h1 className='text-2xl font-extrabold font-neucha ml-5 '>
                 Pra<span className='text-[crimson]'>besh</span>
                 </h1>
         </div>
-        <div className='h-[100%] w-[70%] flex items-center'>
+        <button className='hidden'>
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+        <path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd" />
+        </svg>
+        </button>
+        <div className='hidden  sm:flex sm:items-center sm:h-[100%] sm:w-[100%]'>
             <ul className='h-[100%] w-[75%] flex justify-around items-center font-bold uppercase '>
                <li><a href='#home' className='cursor-pointer hover:text-green-500 '>Home</a></li>
                <li><a href='#about' className='cursor-pointer hover:text-green-500 '>About</a></li> 
