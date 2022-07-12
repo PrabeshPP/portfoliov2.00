@@ -9,7 +9,7 @@ const Header:React.FC = () => {
 
 
   return (
-    <section className={`sm:h-[10vh] sm:w-[100%] sm:bg-white sm:flex sm:flex-row sm:justify-between sm:shadow-header-shadow sm:sticky sm:top-0 sm:z-10 flex flex-col items-center justify-between  sticky top-0 z-10 transition-all ease-out duration-500  ${clicked==false?"max-h-[10vh]":"h-max"}  shadow-md shadow-[#00000057]`}>
+    <section className={`sm:h-[10vh] sm:w-[100%] sm:bg-white sm:flex sm:flex-row sm:justify-between sm:shadow-header-shadow sm:sticky sm:top-0 sm:z-10 flex flex-col items-center justify-between  sticky top-0 z-10 transition-all ease-out duration-500  ${clicked==false?"max-h-[10vh]":"h-max"}  shadow-md shadow-[#00000057] bg-white`}>
         <div className='sm:h-[100%] sm:w-[20%] sm:flex sm:items-center sm:justify-start sm:select-none sm:box-border w-[100%] h-[10vh]  flex items-center justify-between '>
             <h1 className='text-2xl font-extrabold font-neucha ml-5 '>
                 Pra<span className='text-[crimson]'>besh</span>

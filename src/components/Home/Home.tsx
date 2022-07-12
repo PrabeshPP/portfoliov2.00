@@ -7,13 +7,13 @@ export const Home = () => {
       id="home"
       className="sm:min-h-[90vh] w-[100%]  flex  flex-col p-0 m-0 bg-[royalblue] justify-between items-center relative min-h-[60vh] "
     >
-      <div className="sm:min-h-[20vh] w-[100%] text-center flex items-center justify-center flex-col  sm:mt-32 absolute top-20 h-[max-content]">
+      <div className="sm:min-h-[20vh] w-[100%] text-center flex items-center justify-center flex-col sm:top-5  sm:mt-32 absolute top-20 h-[max-content]">
         <span className="sm:text-5xl sm:text-white sm:font-bold sm:font-sans text-3xl text-white font-bold font-sans">
           Mobile Developer,Web Developer, Blockchain Enthusiast.
         </span>
         <div className="sm:flex sm:w-[25%] sm:h-[5vh]  sm:justify-around sm:items-center sm:text-2xl sm:text-white sm:mt-10 w-[35%] h-[5vh] justify-around flex items-center text-2xl mt-5 ">
           <a href="https://www.linkedin.com/in/prabeshbista/" target="_blank">
-            <BsLinkedin className="cursor-pointer text-white transition-all  hover:text-white sm:hover:scale-[1.5] " />
+            <BsLinkedin className="sm:cursor-pointer text-white transition-all  hover:text-white sm:hover:scale-[1.5] " />
           </a>
           <a href="https://github.com/PrabeshPP" target="_blank">
             <BsGithub className="cursor-pointer transition-all text-white hover:text-white sm:hover:scale-[1.5] " />
