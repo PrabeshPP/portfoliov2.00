@@ -14,7 +14,7 @@ const Contacts: React.FC = () => {
   const submitData=async(e:any)=>{
     e.preventDefault();
     
-    const contactsRef=collection(db,"Contacts","contact");
+    const contactsRef=collection(db,"Contacts");
     if(name.trim().length===0 && email.trim().length===0 && subject.trim().length===0 && message.trim().length===0){
         return ;
     }
