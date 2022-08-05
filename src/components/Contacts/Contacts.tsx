@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { collection,doc,setDoc } from "firebase/firestore";
+import { addDoc, collection } from "firebase/firestore";
 import { db } from '../../configuration/firebaseConfig';
 
 const Contacts: React.FC = () => {
@@ -14,12 +14,12 @@ const Contacts: React.FC = () => {
   const submitData=async(e:any)=>{
     e.preventDefault();
     
-    const contactsRef=doc(db,"Contacts","contact");
+    const contactsRef=collection(db,"Contacts","contact");
     if(name.trim().length===0 && email.trim().length===0 && subject.trim().length===0 && message.trim().length===0){
         return ;
     }
    
-    await setDoc(contactsRef,{
+    await addDoc(contactsRef,{
         "Full Name":name,
         "email":email,
         "subject":subject,
