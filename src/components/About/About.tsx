@@ -75,7 +75,7 @@ const About = () => {
               }
               <div className='sm:h-[20%] sm:w-[70%]  w-[80%] h-[6vh] items-center flex justify-around sm:mt-0 mt-5'>
               <a href='https://github.com/PrabeshPP' target="_blank" className='sm:h-[70%] sm:w-[40%] h-[80%] w-[40%] bg-[crimson] mb-2 rounded-full text-white font-bold shadow-lg shadow-black  transition-colors sm:hover:bg-green-500'><button className=' h-[100%] w-[100%]  '>GitHub</button></a>
-              <a href='https://drive.google.com/file/d/1d_Nwg_XzeZN2sIibLOWSCX1qP754S2vU/view?usp=sharing' className='h-[80%] w-[40%] sm:h-[70%] sm:w-[40%] mb-2 rounded-full bg-[crimson] text-white font-bold shadow-lg shadow-black  transition-colors sm:hover:bg-green-500' target="_blank"><button className=' h-[100%] w-[100%] '>My CV</button></a>
+              <a href='https://drive.google.com/file/d/1_NimIj8TKXKfwZ_S3OJfGWParuIRYQJE/view?usp=sharing' className='h-[80%] w-[40%] sm:h-[70%] sm:w-[40%] mb-2 rounded-full bg-[crimson] text-white font-bold shadow-lg shadow-black  transition-colors sm:hover:bg-green-500' target="_blank"><button className=' h-[100%] w-[100%] '>My CV</button></a>
               </div>
           </div>
 
